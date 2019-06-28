@@ -3,20 +3,20 @@
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-import {Entity, model, property} from '@loopback/repository';
+import { Entity, model, property } from '@loopback/repository';
 
 @model()
 export class Product extends Entity {
   @property({
     type: 'string',
     required: true,
+    id: true,
   })
-  productId: string;
+  id: string;
 
   @property({
     type: 'string',
     required: true,
-    id: true,
   })
   name: string;
 

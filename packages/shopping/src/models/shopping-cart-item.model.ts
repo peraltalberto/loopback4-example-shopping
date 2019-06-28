@@ -3,7 +3,7 @@
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-import {Entity, model, property} from '@loopback/repository';
+import { Entity, model, property } from '@loopback/repository';
 
 /**
  * Item in a shopping cart
@@ -13,7 +13,7 @@ export class ShoppingCartItem extends Entity {
   /**
    * Product id
    */
-  @property({id: true})
+  @property({ id: true })
   productId: string;
   /**
    * Quantity
